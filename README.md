@@ -16,7 +16,7 @@ The Tenzies Game is a dynamic and interactive dice game. It is designed to provi
 
 ### <span style="color:#2E8B57;">Live Demo</span>
 
-Explore: [Play Tenzies Game](https://your-live-demo-link.com).
+Explore: [Play Tenzies Game](https://tenzies-ochre-ten.vercel.app/).
 
 ### Features
 
