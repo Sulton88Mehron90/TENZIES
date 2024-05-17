@@ -1,10 +1,13 @@
+
 :root {
-  --background-color: #141414;
+  --background-color-dark: #141414;
+  --background-color-light: #30acf6;
   --main-bg-color: #ffffff;
   --primary-color: #e50914;
   --secondary-color: #1ce783;
   --tertiary-color: #08529b;
   --font-color: #333;
+  --button-bg-color: var(--secondary-color);
 }
 
 * {
@@ -13,7 +16,7 @@
 
 body {
   margin: 0;
-  background-color: var(--background-color);
+  background-color: var(--background-color-light);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +65,7 @@ main:hover {
   font-weight: 400;
   margin-top: 20px;
   text-align: center;
-  color: var(--background-color);
+  color: var(--background-color-dark);
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -149,6 +152,10 @@ main:hover {
 
 .button:active {
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.button.win {
+  background-color: var(--background-color-light);
 }
 
 .side-image {

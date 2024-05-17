@@ -1,4 +1,3 @@
-
 import './App.css';
 import React, { useState, useEffect } from "react";
 import Die from "./Die";
@@ -93,7 +92,7 @@ export default function App() {
                     <img src={diceImage} alt="funny dice" className="side-image" />
                 </div>
                 <div className="buttons-container">
-                    <button className="button" onClick={rollDice}>
+                    <button className={`button ${tenzies ? "win" : ""}`} onClick={rollDice}>
                         {tenzies ? "New Game" : "Roll"}
                     </button>
                     <button className="button" onClick={startOver}>
