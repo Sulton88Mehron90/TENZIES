@@ -1,7 +1,7 @@
 <div align="left">
   <h1 style="color:#e50914; display: inline;">
     Tenzies Game
-    <img src="src/assets/arias.png" alt="Dice Image" width="105" style="margin-left: 5px; border-radius: 50%; vertical-align: middle;">
+    <img src="../src/Sound/dice3.png" alt="Dice Image" width="105" style="margin-left: 5px; border-radius: 50%; vertical-align: middle;">
   </h1>
 </div>
 
@@ -46,4 +46,23 @@ The Tenzies Game is built using modern web technologies:
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/tenzies-game
+   git clone https://github.com/Sulton88Mehron90/TENZIES
+
+2. Navigate to the project directory:
+   ```
+   cd tenzies
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Start the application:
+   ```
+   npm start
+   ```
+<div align="right">
+  <h1 style="color:red; display: inline;">
+    Thank you
+    <img src="../src/Sound/dice3.png" alt="Profile Picture" width="105" style="margin-left: 5px; border-radius: 50%; vertical-align: middle;">
+  </h1>
+</div>
