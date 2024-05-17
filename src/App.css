@@ -23,6 +23,7 @@ body {
   height: 100vh;
   font-family: 'Karla', sans-serif;
   overflow: hidden; 
+  position: relative;
 }
 
 main {
@@ -156,6 +157,20 @@ main:hover {
 
 .button.win {
   background-color: var(--background-color-light);
+}
+
+.confetti-container {
+  position: absolute;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  /* z-index: -1;  */
 }
 
 .side-image {
