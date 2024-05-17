@@ -1,8 +1,10 @@
+
 import './App.css';
 import React, { useState, useEffect } from "react";
 import Die from "./Die";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
+import { useWindowSize } from 'react-use';
 import rollSoundFile from '../src/Sound/roll.wav';
 import holdSoundFile from '../src/Sound/hold.wav';
 import winSoundFile from '../src/Sound/win.wav';
@@ -16,6 +18,7 @@ export default function App() {
     const [dice, setDice] = useState(allNewDice());
     const [tenzies, setTenzies] = useState(false);
     const [rollCount, setRollCount] = useState(0);
+    const { width, height } = useWindowSize();
 
     useEffect(() => {
         const allHeld = dice.every(die => die.isHeld);
@@ -77,8 +80,8 @@ export default function App() {
 
     return (
         <main>
+            {tenzies && <Confetti width={width} height={height} />}
             <div className="main-content">
-                {tenzies && <Confetti className="confetti" />}
                 <h1 className="title">Tenzies</h1>
                 <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
                 <div className="roll-counter">Rolls: {rollCount}</div>
@@ -100,4 +103,4 @@ export default function App() {
             </div>
         </main>
     );
-}  
+}
